@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav>
+        <img src="try.png" alt="Logo" class="logo">
+        <a href="#dashboard.html"><i class="fa-solid fa-house"></i></a>
+        <span>Home</span>
+        <a href="profile.html"><i class="fa-regular fa-user"></i></a>
+        <span>Profile</span>
+        <a href="#third"><i class="fa-solid fa-plus"></i></a>
+        <span>Create</span>
+        <a href="#fourth"><i class="fa-brands fa-rocketchat"></i></a>
+        <span>Chat</span>
+        <a href="#fifth"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+        <span>LogOut</span>
+    </nav>
+
+    <div class='container'>
+        <div class="header">
+            <p class="task-progress">Task Progress</p>
+            <i class="fas fa-info-circle info-icon"></i>
+        </div>
+
+        <div class="sections">
+            <section id='assigned'>
+                <h1>Assigned</h1>
+                <p class="progress-text"></p>
+                <div class="progress-bar">
+                    <span class="progress" style="width: 70%;"></span>
+                </div>
+            </section>
+
+            <section id='accepted'>
+                <h1>Accepted</h1>
+                <p class="progress-text"></p>
+                <div class="progress-bar">
+                    <span class="progress" style="width: 50%;"></span>
+                </div>
+            </section>
+
+            <section id='done'>
+                <h1>Done</h1>
+                <p class="progress-text"></p>
+                <div class="progress-bar">
+                    <span class="progress" style="width: 85%;"></span>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- Three horizontally aligned containers -->
+    <div class="horizontal-containers">
+        <div class="container-item">
+            <div class="bottom-left-text">kawu</div>
+            Task 1 <br>Hello World!</br>
+            <button class="small-button">Accept</button>
+        </div>
+        <div class="container-item">
+            <div class="bottom-left-text">kawu</div>
+            Task 3 <br>Hello World!</br>
+            <button class="small-button">Done</button>
+        </div>
+        <div class="container-item">
+            <div class="bottom-left-text">kawu</div>
+            Task 5 <br>Hello World!</br>
+            <button class="small-button">Submit</button>
+        </div>
+    </div>
+    <!-- Three horizontally aligned containers -->
+    <div class="horizontal-containers">
+        <div class="container-item">
+            <div class="bottom-left-text">kawu</div>
+            Task 2 <br>Hello World!</br>
+            <button class="small-button">Accept</button>
+        </div>
+        <div class="container-item">
+            <div class="bottom-left-text">kawu</div>
+            Task 4 <br>Hello World!</br>
+            <button class="small-button">Done</button>
+        </div>
+        <div class="container-item">
+            <div class="bottom-left-text">kawu</div>
+            Task 6 <br>Hello World!</br>
+            <button class="small-button">Submit</button>
+        </div>
+    </div>
+</body>
+
+</html>

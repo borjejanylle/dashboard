@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #D96AA7;
+    --secondary-color: #756ab6;
+    --complimentary-color: #88BFB5;
+    --contrast-color: #F2E527;
+    --light-color: #D2A9D9;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    width: 7%;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: var(--secondary-color);
+}
+
+nav a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+span {
+    margin-bottom: 48%;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    font-family: Montserrat, sans-serif;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.info-icon {
+    font-size: 40px;
+    color: #0f0d0d;
+    margin-left: auto;
+    width: 70px;
+    height: 50px;
+}
+
+.sections {
+    display: flex;
+}
+
+section {
+    text-align: center;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0%;
+    margin-right: 35%;
+    margin-left: 35%;
+}
+
+h1 {
+    color: #0f0d0d;
+    font-size: 24 px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#assigned,
+#accepted,
+#done {
+    width: 100%;
+    max-width: 45%;
+}
+
+.progress-bar {
+    width: 60px;
+    height: 10px;
+    background-color: #070606;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress {
+    display: block;
+    height: 100%;
+    background-color: var(--secondary-color);
+    transition: width 0.5s ease-in-out;
+}
+
+.progress-text {
+    font-size: 20px;
+    color: #0f0d0d;
+    margin-bottom: 5px;
+}
+
+.sections {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0%;
+}
+
+.section h1 {
+    color: #0f0d0d;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 0%;
+}
+
+.task-progress {
+    font-size: 20px;
+    color: #0f0d0d;
+    margin-right: auto;
+    margin-left: 10%;
+}
+
+.task-bar {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    background: #fff;
+}
+
+.task-bar .progress-bar {
+    width: 15px;
+    height: 60px;
+    background-color: #070606;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.task-bar .progress {
+    display: block;
+    width: 100%;
+    background-color: var(--secondary-color);
+    transition: height 0.5s ease-in-out;
+}
+
+.task-bar .progress-text {
+    font-size: 12px;
+    color: #0f0d0d;
+    margin-bottom: 5px;
+}
+
+
+/*container shts*/
+
+.horizontal-containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.container-item {
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+    background-color: #ededed;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: left;
+    padding: 10px;
+}
+
+.container-item {
+    position: relative;
+}
+
+.bottom-left-text {
+    position: absolute;
+    bottom: 0%;
+    top: 70%;
+    left: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #8c8c8b;
+}
+
+.small-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #756ab6;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Media queries for responsiveness */
+
+@media screen and (min-width: 768px) {
+    nav {
+        width: 10%;
+    }
+    nav a {
+        font-size: 24px;
+    }
+    span {
+        margin-bottom: 8%;
+        font-size: 18px;
+    }
+    .info-icon {
+        font-size: 50px;
+        width: 80px;
+        height: 60px;
+    }
+    .header {
+        margin-bottom: 15px;
+    }
+    h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    .progress-bar {
+        width: 80px;
+        height: 15px;
+    }
+    .progress-text {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    .section h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .task-progress {
+        font-size: 28px;
+    }
+    .task-bar .progress-bar {
+        width: 20px;
+        height: 80px;
+    }
+    .task-bar .progress-text {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    .horizontal-containers {
+        margin-top: 20px;
+    }
+    .container-item {
+        max-width: 400px;
+        height: 350px;
+        margin: 15px;
+        font-size: large;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    nav {
+        width: 7%;
+    }
+    nav a {
+        font-size: 30px;
+    }
+    span {
+        margin-bottom: 55%;
+        font-size: 26px;
+    }
+    .info-icon {
+        font-size: 60px;
+        width: 100px;
+        height: 75px;
+    }
+    .header {
+        margin-bottom: 25px;
+    }
+    h1 {
+        font-size: 25px;
+        margin-bottom: 0%;
+        margin-left: 0%;
+    }
+    .progress-bar {
+        width: 100px;
+        height: 20px;
+        margin-bottom: 0%;
+    }
+    .progress-text {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .section h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .task-progress {
+        font-size: 30px;
+        font: bolder;
+    }
+    .task-bar .progress-bar {
+        width: 25px;
+        height: 100px;
+    }
+    .task-bar .progress-text {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .horizontal-containers {
+        margin-top: 25px;
+    }
+    .container-item {
+        max-width: 350px;
+        height: 250px;
+        margin: 0%;
+        margin-left: 7.5%;
+        margin-right: 0%;
+    }
+}
